@@ -1,0 +1,11 @@
+{
+  "rmse": 1.1711,
+  "mae": 0.9252,
+  "r2": 0.4,
+  "pearson_r": 0.6346,
+  "pearson_p": 7.670138251069791e-170,
+  "spearman_rho": 0.6069,
+  "spearman_p": 1.2392494981673692e-151,
+  "n_samples": 1500,
+  "model": "GNN"
+}

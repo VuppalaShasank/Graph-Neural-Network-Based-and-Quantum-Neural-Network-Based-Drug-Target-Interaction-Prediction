@@ -1,0 +1,31 @@
+model_name: "GNN_QNN"
+# GNN Encoder
+atom_feature_dim: 41
+bond_feature_dim: 16
+hidden_dim: 64
+gnn_num_layers: 3
+gnn_out_dim: 64
+dropout: 0.2
+
+# Protein Sequence Encoder
+vocab_size: 22
+prot_embed_dim: 64
+prot_num_filters: 64
+prot_kernel_size: 7
+prot_out_dim: 64
+
+# Hybrid Quantum Prediction Head
+fusion_dim: 128 # 64 GNN + 64 Protein
+reduction_hidden_dim: 32
+n_qubits: 4
+qnn_circuit_depth: 2
+qnn_device: "default.qubit"
+
+# Training
+batch_size: 64
+learning_rate: 0.001
+weight_decay: 0.0001
+epochs: 12
+patience: 5
+seed: 42
+device: "auto"

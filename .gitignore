@@ -1,0 +1,29 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Large Raw Datasets (Raw BindingDB TSV is ~9 GB; curated 10k dataset is tracked in data/processed/)
+BindingDB_All.tsv
+*.tsv
+*.zip
+*.tar.gz
+
+# Preprocessing caches (contains tens of thousands of PyG graph and feature tensors generated on-the-fly)
+data/graph_cache/
+data/feature_cache/
+
+# Runtime logs
+logs/
+*.log
+
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/

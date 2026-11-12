@@ -1,0 +1,27 @@
+model_name: "GNN"
+atom_feature_dim: 41
+bond_feature_dim: 16
+hidden_dim: 64
+gnn_num_layers: 3
+gnn_out_dim: 64
+dropout: 0.2
+
+# Protein encoder
+vocab_size: 22
+prot_embed_dim: 64
+prot_num_filters: 64
+prot_kernel_size: 7
+prot_out_dim: 64
+
+# Prediction head
+fusion_dim: 128 # 64 + 64
+mlp_hidden_dims: [64, 32]
+
+# Training
+batch_size: 64
+learning_rate: 0.001
+weight_decay: 0.0001
+epochs: 12
+patience: 5
+seed: 42
+device: "auto"

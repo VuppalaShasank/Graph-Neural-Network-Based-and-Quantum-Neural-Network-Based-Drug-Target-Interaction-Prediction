@@ -1,0 +1,11 @@
+{
+  "rmse": 1.1869,
+  "mae": 0.9448,
+  "r2": 0.3838,
+  "pearson_r": 0.6248,
+  "pearson_p": 3.6290887388997916e-163,
+  "spearman_rho": 0.5931,
+  "spearman_p": 3.185975263194671e-143,
+  "n_samples": 1500,
+  "model": "Novel_Hybrid_BP_QDA"
+}

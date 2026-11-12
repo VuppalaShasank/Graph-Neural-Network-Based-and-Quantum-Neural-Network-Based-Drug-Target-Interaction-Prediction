@@ -1,0 +1,41 @@
+model_name: "Novel_Hybrid_BP_QDA"
+display_name: "Model 4: Bi-Partite Quantum Docking Hybrid (BP-QDA)"
+
+# GNN Drug Encoder
+atom_feature_dim: 41
+bond_feature_dim: 16
+gnn_hidden_dim: 64
+gnn_num_layers: 3
+gnn_out_dim: 64
+gnn_dropout: 0.2
+
+# Protein Sequence Encoder
+vocab_size: 22
+prot_embed_dim: 64
+prot_num_filters: 64
+prot_kernel_size: 7
+prot_out_dim: 64
+prot_dropout: 0.2
+
+# Bi-Partite Quantum Docking Circuit
+n_qubits: 4
+n_drug_qubits: 2
+n_target_qubits: 2
+circuit_layers: 2
+quantum_device: "default.qubit"
+enable_data_reuploading: true
+enable_residual_connection: true
+
+# Classical Readout Head
+classical_fusion_dim: 128 # 64 drug + 64 target
+quantum_observable_dim: 8  # 4 Z + 2 X + 2 Cross-Correlators (Z1@Z2, X1@X2)
+combined_head_dim: 136    # 128 + 8
+
+# Training
+batch_size: 64
+learning_rate: 0.001
+weight_decay: 0.0001
+epochs: 10
+patience: 5
+seed: 42
+device: "auto"

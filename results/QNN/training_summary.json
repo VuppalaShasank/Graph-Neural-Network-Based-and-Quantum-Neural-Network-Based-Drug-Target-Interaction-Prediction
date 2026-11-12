@@ -1,0 +1,13 @@
+{
+  "rmse": 1.1818,
+  "mae": 0.9191,
+  "r2": 0.3891,
+  "pearson_r": 0.6333,
+  "pearson_p": 5.541322583595495e-169,
+  "spearman_rho": 0.6223,
+  "spearman_p": 1.5036123518160246e-161,
+  "n_samples": 1500,
+  "model": "QNN",
+  "training_time_seconds": 174.67,
+  "best_epoch": 10
+}

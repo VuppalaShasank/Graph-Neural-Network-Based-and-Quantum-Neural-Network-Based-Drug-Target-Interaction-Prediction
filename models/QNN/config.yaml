@@ -1,0 +1,26 @@
+model_name: "QNN"
+# Molecular feature dimensions
+drug_feature_dim: 264 # 256 ECFP4 bits + 8 RDKit descriptors
+drug_hidden_dim: 64
+
+# Protein sequence encoder
+vocab_size: 22
+prot_embed_dim: 64
+prot_num_filters: 64
+prot_kernel_size: 7
+prot_out_dim: 64
+
+# Joint projection & Quantum Circuit
+joint_hidden_dim: 32
+n_qubits: 4
+qnn_circuit_depth: 2
+qnn_device: "default.qubit"
+
+# Training
+batch_size: 64
+learning_rate: 0.001
+weight_decay: 0.0001
+epochs: 12
+patience: 5
+seed: 42
+device: "auto"

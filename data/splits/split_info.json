@@ -1,0 +1,22 @@
+{
+  "total_observations": 10000,
+  "random_seed": 42,
+  "train_ratio": 0.7,
+  "val_ratio": 0.15,
+  "test_ratio": 0.15,
+  "train_samples": 7000,
+  "val_samples": 1500,
+  "test_samples": 1500,
+  "train_unique_drugs": 6186,
+  "train_unique_targets": 776,
+  "val_unique_drugs": 1458,
+  "val_unique_targets": 417,
+  "test_unique_drugs": 1443,
+  "test_unique_targets": 435,
+  "pKi_train_mean": 7.3325,
+  "pKi_train_std": 1.4847,
+  "pKi_val_mean": 7.2828,
+  "pKi_val_std": 1.4839,
+  "pKi_test_mean": 7.315,
+  "pKi_test_std": 1.5125
+}

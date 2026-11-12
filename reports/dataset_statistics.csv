@@ -1,0 +1,28 @@
+Metric,Value
+Dataset Filename,BindingDB_All.tsv
+Dataset Absolute Path,C:\Users\vuppa\OneDrive\Desktop\AIDD_Proj_Sem7\BindingDB_All.tsv
+Dataset File Size (GB),8.368
+Total Records,3237052
+Records with Ligand SMILES,3236971
+Records with Target Chain 1 Sequence,3237046
+Records with Any Target Chain Sequence,3237046
+Records with Single-Chain Target,3050612
+Records with Multi-Chain Target,186434
+Unique SMILES (Estimated),1432770
+Unique Targets,8927
+Unique Drug-Target Pairs,2438225
+Duplicate Drug-Target Observations,798746
+Ki Total Present,622916
+Ki Exact Numeric Valid,541869
+Ki Censored (> / < / ~),81020
+Kd Total Present,131524
+Kd Exact Numeric Valid,82471
+Kd Censored (> / < / ~),49020
+IC50 Total Present,2214673
+IC50 Exact Numeric Valid,1747452
+IC50 Censored (> / < / ~),467086
+EC50 Total Present,270817
+EC50 Exact Numeric Valid,216812
+EC50 Censored (> / < / ~),53978
+Records Lacking All Affinities,2949
+Records with >=1 Numeric Affinity,2583404
